@@ -3,34 +3,25 @@
 The Airline Check-in App is a web application designed to facilitate the check-in process for airline passengers. This document provides an overview of the project structure, helping developers and contributors understand the organization of the codebase.
 
 ```
-weather-app/
-|-- src/
-|   |-- components/
-|   |   |-- Search/
-|   |   |   |-- Seach.vue
-|   |   |-- Spinner/
-|   |   |   |-- Spinner.vue
-|   |   |-- Weather/
-|   |   |   |-- Weather.vue
-|   |   |   |-- WeatherDetail.vue
-|   |   |   |-- WeatherInfo.vue
-|   |   |   |-- TemperatureInfo.vue
-|   |
-|   |-- css/
-|   |   |-- base.css
-|   |   |-- app.css
-|   |
-|   |-- types/
-|   |   |-- weather.response.ts
-|   |
-|   |-- utils/
-|   |   |-- executeRequest.ts
-|   |
-|   |-- App.vue
-|   |-- main.ts
-|
-|-- public/
-|   |-- index.html
+Airline-checkin-app
+│
+├── src
+│   ├── app
+│   │   ├── graphal
+│   │   ├── main module
+│   │   ├── models
+│   │   ├── modules
+│   │   ├── service
+│   │   └── shared-module
+│   │
+│   ├── assets
+│   ├── environments
+│   └── gql-mocks
+│
+├── public
+├── package.json
+├── README.md
+└── .gitignore
 
 ```
 
