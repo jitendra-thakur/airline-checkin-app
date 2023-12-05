@@ -1,0 +1,63 @@
+<section role="form" aria-labelledby="checkinForm">
+  <form [formGroup]="checkinForm">
+    <h2>{{ "checkIn.title" | translate }}</h2>
+    <div class="inner-form">
+      <app-notification
+        [notification]="checkinErrorNotification"
+        aria-live="assertive"
+      ></app-notification>
+      <div class="row">
+        <div class="form-field">
+          <label for="bookingCode">
+            {{ "checkIn.labels.bookingCode" | translate }}
+          </label>
+          <input
+            [ngClass]="{
+              'error-border': shouldShowError('bookingCode')
+            }"
+            class="icon--documents-text"
+            type="text"
+            id="bookingCode"
+            formControlName="bookingCode"
+            placeholder="Enter booking code"
+            (input)="clearError('bookingCode')"
+            aria-describedby="bookingCodeError"
+          />
+          <div
+            *ngIf="checkinForm?.get('bookingCode')?.hasError('pattern')"
+            class="error-message"
+          >
+            {{ "checkIn.errors.invalid.bookingCode" | translate }}
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="familyName">
+            {{ "checkIn.labels.familyName" | translate }}
+          </label>
+          <input
+            [ngClass]="{
+              'error-border': shouldShowError('familyName')
+            }"
+            class="icon--user-circle"
+            type="text"
+            id="familyName"
+            formControlName="familyName"
+            placeholder="Enter family name"
+            (input)="clearError('familyName')"
+            aria-describedby="familyNameError"
+          />
+          <div
+            *ngIf="checkinForm?.get('familyName')?.hasError('pattern')"
+            class="error-message"
+          >
+            {{ "checkIn.errors.invalid.familyName" | translate }}
+          </div>
+        </div>
+      </div>
+      <button class="btn-submit" type="button" (click)="submitCheckinForm()">
+        {{ "checkIn.buttons.checkIn" | translate }}
+      </button>
+    </div>
+  </form>
+</section>

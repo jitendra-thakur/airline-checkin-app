@@ -1,0 +1,137 @@
+/* Global Styles */
+:root {
+  /* Global Styles */
+  --body-background-color: #00b5e9;
+  --body-font-family: monospace, monospace;
+  --body-padding: 10px;
+
+  /* Section Styles */
+  --section-display: flex;
+  --section-flex-direction: column;
+  --section-align-items: center;
+
+  /* Form Styles */
+  --form-width: 100%;
+  --form-max-width: 600px;
+  --form-margin: 0;
+  --form-background: #fff;
+  --form-padding: 40px;
+  --form-border-radius: 3px;
+  --form-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+
+  /* Row Styles */
+  --row-display: flex;
+  --row-justify-content: space-between;
+  --row-margin-bottom: 10px;
+  --row-gap: 14px;
+
+  /* Inner Form Styles */
+  --inner-form-width: 100%;
+
+  /* Form Field Styles */
+  --form-field-display: flex;
+  --form-field-flex-direction: column;
+  --form-field-margin-bottom: 20px;
+  --form-field-flex-basis: 100%;
+
+  /* Label Styles */
+  --label-font-weight: 700;
+  --label-font-size: 15px;
+  --label-color: #555;
+  --label-display: flex;
+  --label-align-items: center;
+  --label-margin-bottom: 8px;
+
+  /* Input Styles */
+  --input-border: 1px solid #ccc;
+  --input-border-radius: 3px;
+  --input-padding: 8px;
+  --input-font-size: 14px;
+
+  /* Input Icon Styles */
+  --input-icon-fill: none;
+  --input-icon-stroke-width: 3;
+  --input-icon-stroke: #491ec4;
+  --input-icon-padding-left: 28px;
+
+  /* Error Message Styles */
+  --error-message-color: #d12d2d;
+  --error-message-margin-top: 5px;
+
+  /* Form Error Summary Styles */
+  --form-error-summary-color: #d12d2d;
+  --form-error-summary-margin-bottom: 10px;
+
+  /* Success Screen Styles */
+  --success-screen-margin-top: 20px;
+  --success-screen-padding: 20px;
+  --success-screen-border: 1px solid #ccc;
+  --success-screen-border-radius: 5px;
+
+  /* Submit Button Styles */
+  --btn-submit-min-width: 100px;
+  --btn-submit-height: 40px;
+  --btn-submit-padding: 0 15px;
+  --btn-submit-background: #57b846;
+  --btn-submit-white-space: nowrap;
+  --btn-submit-border-radius: 3px;
+  --btn-submit-font-size: 14px;
+  --btn-submit-color: #fff;
+  --btn-submit-transition: all 0.2s ease-out, color 0.2s ease-out;
+  --btn-submit-border: 0;
+  --btn-submit-cursor: pointer;
+  --btn-submit-font-weight: 700;
+
+  /* Responsive Styles */
+  --media-max-width: 767px;
+  --row-display-responsive: block;
+  --form-field-width-responsive: 100%;
+  --form-field-margin-bottom-responsive: 20px;
+
+  /* Notification Styles */
+  --form-border-radius: 4px;
+  --label-font-size: var(--input-font-size);;
+  --notification-background: #fcdde0;
+  --notification-error-background: #f8d7da;
+  --notification-success-background: #dcf6d9;
+
+  --notification-border: #d9534f;
+  --notification-error-border: #f5c6cb;
+  --notification-success-border: #c3e6cb;
+
+  --notification-text: #370005;
+  --notification-error-text: var(--notification-border);
+  --notification-success-text: #155724;
+
+  /* Icon Styles */
+  --icon-documents-text-background: url(./assets/icon/documents-text.svg)
+    no-repeat scroll 5px 7px;
+  --icon-documents-text-background-size: 20px;
+  --icon-user-circle-background: url(./assets/icon/user-circle.svg) no-repeat
+    scroll 5px 7px;
+  --icon-user-circle-background-size: 20px;
+}
+
+/* Global Styles */
+body {
+  background: var(--body-background-color);
+  font-family: var(--body-font-family);
+  padding: var(--body-padding);
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+/* Icon Styles */
+.icon {
+  &--documents-text {
+    background: var(--icon-documents-text-background);
+    background-size: var(--icon-documents-text-background-size);
+  }
+
+  &--user-circle {
+    background: var(--icon-user-circle-background);
+    background-size: var(--icon-user-circle-background-size);
+  }
+}

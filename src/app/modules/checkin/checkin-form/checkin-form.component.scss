@@ -1,0 +1,121 @@
+/* Form Styles */
+/* Section Styles */
+section {
+  display: var(--section-display);
+  flex-direction: var(--section-flex-direction);
+  align-items: var(--section-align-items);
+
+  /* Form Styles */
+  form {
+    width: var(--form-width);
+    max-width: var(--form-max-width);
+    margin: var(--form-margin);
+    background: var(--form-background);
+    padding: var(--form-padding);
+    border-radius: var(--form-border-radius);
+    box-shadow: var(--form-box-shadow);
+
+    /* Row Styles */
+    .row {
+      display: var(--row-display);
+      justify-content: var(--row-justify-content);
+      margin-bottom: var(--row-margin-bottom);
+      gap: var(--row-gap);
+    }
+
+    /* Inner Form Styles */
+    .inner-form {
+      width: var(--inner-form-width);
+    }
+
+    /* Form Field Styles */
+    .form-field {
+      display: var(--form-field-display);
+      flex-direction: var(--form-field-flex-direction);
+      margin-bottom: var(--form-field-margin-bottom);
+      flex-basis: var(--form-field-flex-basis);
+
+      /* Label Styles */
+      label {
+        font-weight: var(--label-font-weight);
+        font-size: var(--label-font-size);
+        color: var(--label-color);
+        display: var(--label-display);
+        align-items: var(--label-align-items);
+        margin-bottom: var(--label-margin-bottom);
+      }
+
+      /* Input Styles */
+      input {
+        border: var(--input-border);
+        border-radius: var(--input-border-radius);
+        padding: var(--input-padding);
+        font-size: var(--input-font-size);
+
+        &.icon {
+          fill: var(--input-icon-fill);
+          stroke-width: var(--input-icon-stroke-width);
+          stroke: var(--input-icon-stroke);
+
+          &--user-circle,
+          &--documents-text {
+            padding-left: var(--input-icon-padding-left);
+          }
+        }
+      }
+
+      /* Error Message Styles */
+      .error-message {
+        color: var(--error-message-color);
+        margin-top: var(--error-message-margin-top);
+        font-size: var(--input-font-size);
+      }
+
+      .error-border {
+        border: 1px solid var(--error-message-color);
+      }
+    }
+
+    /* Form Error Summary Styles */
+    .form-error-summary {
+      color: var(--form-error-summary-color);
+      margin-bottom: var(--form-error-summary-margin-bottom);
+    }
+
+    /* Success Screen Styles */
+    .success-screen {
+      margin-top: var(--success-screen-margin-top);
+      padding: var(--success-screen-padding);
+      border: var(--success-screen-border);
+      border-radius: var(--success-screen-border-radius);
+    }
+
+    /* Submit Button Styles */
+    .btn-submit {
+      min-width: var(--btn-submit-min-width);
+      height: var(--btn-submit-height);
+      padding: var(--btn-submit-padding);
+      background: var(--btn-submit-background);
+      white-space: var(--btn-submit-white-space);
+      border-radius: var(--btn-submit-border-radius);
+      font-size: var(--btn-submit-font-size);
+      color: var(--btn-submit-color);
+      transition: var(--btn-submit-transition);
+      border: var(--btn-submit-border);
+      cursor: var(--btn-submit-cursor);
+      font-weight: var(--btn-submit-font-weight);
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: var(--media-max-width)) {
+      .row {
+        display: var(--row-display-responsive);
+      }
+
+      .form-field {
+        width: var(--form-field-width-responsive);
+        margin-bottom: var(--form-field-margin-bottom-responsive);
+      }
+    }
+  }
+}

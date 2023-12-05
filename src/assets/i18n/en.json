@@ -1,0 +1,12 @@
+{
+    "checkIn.title":"Check-in App",
+    "checkIn.labels.bookingCode":"Booking Code",
+    "checkIn.labels.familyName":"Family Name",
+    "checkIn.placeholder.bookingCode":"Enter Booking Code",
+    "checkIn.placeholder.familyName":"Enter Family Name",
+    "checkIn.errors.pageLevel":"Please input both your Booking Code and Family Name.",
+    "checkIn.errors.invalid.bookingCode": "The entered booking code is invalid",
+    "checkIn.errors.invalid.familyName": "The entered family name is invalid",
+    "checkIn.buttons.checkIn": "Check-in",
+    "checkIn.success.message":"Check-in completed successfully!"
+}
