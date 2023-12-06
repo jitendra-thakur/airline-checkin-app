@@ -14,18 +14,33 @@ section {
     padding: var(--form-padding);
     border-radius: var(--form-border-radius);
     box-shadow: var(--form-box-shadow);
-
-    /* Row Styles */
-    .row {
-      display: var(--row-display);
-      justify-content: var(--row-justify-content);
-      margin-bottom: var(--row-margin-bottom);
-      gap: var(--row-gap);
+    @media only screen and (max-width: 767px) {
+      width: inherit;
     }
 
     /* Inner Form Styles */
     .inner-form {
       width: var(--inner-form-width);
+
+      /* Row Styles */
+      .row {
+        display: var(--row-display);
+        justify-content: var(--row-justify-content);
+        margin-bottom: var(--row-margin-bottom);
+        gap: var(--row-gap);
+      }
+
+      /* Responsive Styles */
+      @media only screen and (max-width: 767px) {
+        .row {
+          display: var(--row-display-responsive);
+        }
+
+        .form-field {
+          width: var(--form-field-width-responsive);
+          margin-bottom: var(--form-field-margin-bottom-responsive);
+        }
+      }
     }
 
     /* Form Field Styles */
@@ -104,18 +119,6 @@ section {
       border: var(--btn-submit-border);
       cursor: var(--btn-submit-cursor);
       font-weight: var(--btn-submit-font-weight);
-    }
-
-    /* Responsive Styles */
-    @media screen and (max-width: var(--media-max-width)) {
-      .row {
-        display: var(--row-display-responsive);
-      }
-
-      .form-field {
-        width: var(--form-field-width-responsive);
-        margin-bottom: var(--form-field-margin-bottom-responsive);
-      }
     }
   }
 }
